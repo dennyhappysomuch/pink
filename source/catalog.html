@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Название проекта</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="styles/styles.css">
+  <script src="scripts/index.js" defer></script>
+</head>
+
+<body class="page">
+  <header class="page__header page-header">
+    <nav class="page-header__main-nav main-nav">
+      <a class="main-nav__logo logo" href="#">
+        <img src="./images/logo-mobile.svg" width="74" height="23" alt="Логотип Pink">
+      </a>
+
+      <ul class="site-nav">
+        <li class="site-nav__item">
+          <a class="site-nav__link" href="#">главная</a>
+        </li>
+        <li class="site-nav__item">
+          <a class="site-nav__link" href="#">Фотографии</a>
+        </li>
+        <li class="site-nav__item">
+          <a class="site-nav__link" href="#">конкурс</a>
+        </li>
+        <li class="site-nav__item">
+          <a class="site-nav__link" href="#">html academy</a>
+        </li>
+      </ul>
+
+      <button class="burger-button" type="button">
+        <span class="visually-hidden">Открыть меню</span>
+      </button>
+    </nav>
+  </header>
+
+  <main class="page__main">
+    <div class="page__headline">
+      <h1 class="main-title">Фотографии пользователей</h1>
+    </div>
+
+    <section class="catalog">
+      <h2 class="visually-hidden">Посты пользователей</h2>
+
+      <div class="catalog__headline">
+        <p class="catalog__intro">
+          Взгляните на фотографии, которые выкладывают пользователи!
+          Видите, как не хватает ваших?
+        </p>
+      </div>
+
+      <ul class="catalog__list">
+        <li class="catalog__item card">
+          <img class="card__image" src="./images/post-1-mobile@1x.jpg" width="280" height="180" alt="Картинка">
+          <p class="card__author">Анна</p>
+          <time class="card__publication-date" datetime="2025-02-03">(5 минут назад)</time>
+          <p class="card__description">
+            Прыгать или нет? Напишите в
+            комментарии свой совет и
+            смотрите прямую трансляцию в
+            перископе, задавайте свои вопросы!
+          </p>
+          <p class="card__likes">
+            <span class="card__likes-label">Нравится:&nbsp;</span>
+            <span class="card__likes-count">215</span>
+          </p>
+        </li>
+        <li class="catalog__item card">
+          <img class="card__image" src="./images/post-2-mobile@1x.jpg" width="280" height="180" alt="Картинка">
+          <p class="card__author">Левон</p>
+          <time class="card__publication-date" datetime="2025-02-03">(5 часов назад)</time>
+          <p class="card__description">Вчера он на луну летал, сегодня в руки к нам попал.</p>
+          <p class="card__likes">
+            <span class="card__likes-label">Нравится:&nbsp;</span>
+            <span class="card__likes-count">356</span>
+          </p>
+        </li>
+        <li class="catalog__item card">
+          <img class="card__image" src="./images/post-3-mobile@1x.jpg" width="280" height="180" alt="Картинка">
+          <p class="card__author">Антон</p>
+          <time class="card__publication-date" datetime="2025-02-03">(12 часов назад)</time>
+          <p class="card__description">Соседи будут рады!</p>
+          <p class="card__likes">
+            <span class="card__likes-label">Нравится:&nbsp;</span>
+            <span class="card__likes-count">666</span>
+          </p>
+        </li>
+        <li class="catalog__item card">
+          <img class="card__image" src="./images/post-4-mobile@1x.jpg" width="280" height="180" alt="Картинка">
+          <p class="card__author">Борис</p>
+          <time class="card__publication-date" datetime="2025-02-03">(20 часов назад)</time>
+          <p class="card__description">Здесь могла быть ваша цитата о высоком и вечном.</p>
+          <p class="card__likes">
+            <span class="card__likes-label">Нравится:&nbsp;</span>
+            <span class="card__likes-count">215</span>
+          </p>
+        </li>
+        <li class="catalog__item card">
+          <img class="card__image" src="./images/post-5-mobile@1x.jpg" width="280" height="180" alt="Картинка">
+          <p class="card__author">Сергей</p>
+          <time class="card__publication-date" datetime="2025-02-03">(25 часов назад)</time>
+          <p class="card__description">Самая кубанская в мире!</p>
+          <p class="card__likes">
+            <span class="card__likes-label">Нравится:&nbsp;</span>
+            <span class="card__likes-count">4</span>
+          </p>
+        </li>
+        <li class="catalog__item card">
+          <img class="card__image" src="./images/post-6-mobile@1x.jpg" width="280" height="180" alt="Картинка">
+          <p class="card__author">Максим</p>
+          <time class="card__publication-date" datetime="2025-02-03">(40 часов назад)</time>
+          <p class="card__description">Где снег-то?</p>
+          <p class="card__likes">
+            <span class="card__likes-label">Нравится:&nbsp;</span>
+            <span class="card__likes-count">150</span>
+          </p>
+        </li>
+        <li class="catalog__item card">
+          <img class="card__image" src="./images/post-7-mobile@1x.jpg" width="280" height="180" alt="Картинка">
+          <p class="card__author">Надежда</p>
+          <time class="card__publication-date" datetime="2025-02-03">(45 часов назад)</time>
+          <p class="card__description">Всем GM и взаимные лайки!</p>
+          <p class="card__likes">
+            <span class="card__likes-label">Нравится:&nbsp;</span>
+            <span class="card__likes-count">2560</span>
+          </p>
+        </li>
+      </ul>
+    </section>
+
+    <section class="add-post">
+      <h2 class="visually-hidden">Добавить пост</h2>
+
+      <div class="add-post__headline">
+        <p class="add-post__intro">
+          Затмите их всех!
+          Выкладывайте все, что накопилось в телефоне!
+        </p>
+      </div>
+
+      <form class="add-post__form photo-form" action="https://echo.htmlacademy.ru" enctype="multipart/form-data" method="post">
+        <div class="photo-form__image-column">
+          <img class="photo-form__image" src="./images/post-form-mobile@1x.jpg" width="280" height="374" alt="photo">
+        </div>
+
+        <div class="photo-form__controls">
+
+          <div class="photo-form__filters photo-filters tab">
+            <!-- TABS -->
+            <div class="photo-filters__buttons tab__buttons">
+              <button class="photo-filters__button filter-button filter-button--active" type="button" data-filter="crop">
+                <span class="visually-hidden">Обрезка</span>
+              </button>
+
+              <button class="photo-filters__button filter-button" type="button" data-filter="fill">
+                <span class="visually-hidden">Заливка</span>
+              </button>
+
+              <button class="photo-filters__button filter-button" type="button" data-filter="contrast">
+                <span class="visually-hidden">Контрастность</span>
+              </button>
+            </div>
+
+            <!-- TABS CONTENT -->
+            <div class="photo-filters__content tab__content">
+              <div class="photo-filters__item photo-filters__item--icon-crop photo-filters__item--active tab__item" data-filter="crop">
+                <div class="filter-range">
+                  <div class="filter-range__rail">
+                    <div class="filter-range__track"></div>
+                  </div>
+
+                  <button class="filter-range__handle" type="button">
+                    <span class="visually-hidden">Установить значение</span>
+                  </button>
+                </div>
+              </div>
+
+              <div class="photo-filters__item photo-filters__item--icon-fill tab__item" data-filter="fill">
+                <div class="filter-range">
+                  <div class="filter-range__rail">
+                    <div class="filter-range__track"></div>
+                  </div>
+
+                  <button class="filter-range__handle" type="button">
+                    <span class="visually-hidden">Установить значение</span>
+                  </button>
+                </div>
+              </div>
+
+              <div class="photo-filters__item photo-filters__item--icon-contrast tab__item" data-filter="contrast">
+                <div class="filter-range">
+                  <div class="filter-range__rail">
+                    <div class="filter-range__track"></div>
+                  </div>
+
+                  <button class="filter-range__handle" type="button">
+                    <span class="visually-hidden">Установить значение</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="photo-form__buttons">
+            <button class="photo-form__button button button--available button--rounded" type="submit">Запостить</button>
+            <button class="photo-form__button button button--unavailable button--rounded" type="reset">Отмена</button>
+          </div>
+        </div>
+
+      </form>
+    </section>
+  </main>
+
+  <footer class="page-footer">
+    <a class="page-footer__logo logo-second" href="#">
+      <img src="./images/footer-second-mobile.svg" width="145" height="40" alt="Логотип">
+    </a>
+
+    <ul class="page-footer__social social">
+      <li class="social__item">
+        <a class="social__link" href="#">
+          <span class="visually-hidden">Твиттер</span>
+        </a>
+      </li>
+      <li class="social__item">
+        <a class="social__link" href="#">
+          <span class="visually-hidden">Фейсбук</span>
+        </a>
+      </li>
+      <li class="social__item">
+        <a class="social__link" href="#">
+          <span class="visually-hidden">Youtube</span>
+        </a>
+      </li>
+    </ul>
+
+    <div class="page-footer__copyright copyright">
+      <span class="copyright__label">Разработано</span>
+
+      <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+        <span class="visually-hidden">HTML Academy</span>
+      </a>
+    </div>
+  </footer>
+</body>
+
+</html>
