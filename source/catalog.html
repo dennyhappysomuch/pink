@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>Название проекта</title>
+  <title>Каталог</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="stylesheet" href="styles/styles.css">
   <script src="scripts/index.js" defer></script>
@@ -38,8 +38,8 @@
   </header>
 
   <main class="page__main">
-    <div class="page__headline">
-      <h1 class="main-title">Фотографии пользователей</h1>
+    <div class="page__headline page-headline">
+      <h1 class="page-headline__title">Фотографии пользователей</h1>
     </div>
 
     <section class="catalog">
@@ -54,7 +54,9 @@
 
       <ul class="catalog__list">
         <li class="catalog__item card">
-          <img class="card__image" src="./images/post-1-mobile@1x.jpg" width="280" height="180" alt="Картинка">
+          <a class="card__link" href="#">
+            <img class="card__image" src="./images/post-1-mobile@1x.jpg" width="280" height="180" alt="Картинка">
+          </a>
           <p class="card__author">Анна</p>
           <time class="card__publication-date" datetime="2025-02-03">(5 минут назад)</time>
           <p class="card__description">
@@ -69,7 +71,9 @@
           </p>
         </li>
         <li class="catalog__item card">
-          <img class="card__image" src="./images/post-2-mobile@1x.jpg" width="280" height="180" alt="Картинка">
+          <a class="card__link" href="#">
+            <img class="card__image" src="./images/post-2-mobile@1x.jpg" width="280" height="180" alt="Картинка">
+          </a>
           <p class="card__author">Левон</p>
           <time class="card__publication-date" datetime="2025-02-03">(5 часов назад)</time>
           <p class="card__description">Вчера он на луну летал, сегодня в руки к нам попал.</p>
@@ -79,7 +83,9 @@
           </p>
         </li>
         <li class="catalog__item card">
-          <img class="card__image" src="./images/post-3-mobile@1x.jpg" width="280" height="180" alt="Картинка">
+          <a class="card__link" href="#">
+            <img class="card__image" src="./images/post-3-mobile@1x.jpg" width="280" height="180" alt="Картинка">
+          </a>
           <p class="card__author">Антон</p>
           <time class="card__publication-date" datetime="2025-02-03">(12 часов назад)</time>
           <p class="card__description">Соседи будут рады!</p>
@@ -89,7 +95,9 @@
           </p>
         </li>
         <li class="catalog__item card">
-          <img class="card__image" src="./images/post-4-mobile@1x.jpg" width="280" height="180" alt="Картинка">
+          <a class="card__link" href="#">
+            <img class="card__image" src="./images/post-4-mobile@1x.jpg" width="280" height="180" alt="Картинка">
+          </a>
           <p class="card__author">Борис</p>
           <time class="card__publication-date" datetime="2025-02-03">(20 часов назад)</time>
           <p class="card__description">Здесь могла быть ваша цитата о высоком и вечном.</p>
@@ -99,7 +107,9 @@
           </p>
         </li>
         <li class="catalog__item card">
-          <img class="card__image" src="./images/post-5-mobile@1x.jpg" width="280" height="180" alt="Картинка">
+          <a class="card__link" href="#">
+            <img class="card__image" src="./images/post-5-mobile@1x.jpg" width="280" height="180" alt="Картинка">
+          </a>
           <p class="card__author">Сергей</p>
           <time class="card__publication-date" datetime="2025-02-03">(25 часов назад)</time>
           <p class="card__description">Самая кубанская в мире!</p>
@@ -109,7 +119,9 @@
           </p>
         </li>
         <li class="catalog__item card">
-          <img class="card__image" src="./images/post-6-mobile@1x.jpg" width="280" height="180" alt="Картинка">
+          <a class="card__link" href="#">
+            <img class="card__image" src="./images/post-6-mobile@1x.jpg" width="280" height="180" alt="Картинка">
+          </a>
           <p class="card__author">Максим</p>
           <time class="card__publication-date" datetime="2025-02-03">(40 часов назад)</time>
           <p class="card__description">Где снег-то?</p>
@@ -119,7 +131,9 @@
           </p>
         </li>
         <li class="catalog__item card">
-          <img class="card__image" src="./images/post-7-mobile@1x.jpg" width="280" height="180" alt="Картинка">
+          <a class="card__link" href="#">
+            <img class="card__image" src="./images/post-7-mobile@1x.jpg" width="280" height="180" alt="Картинка">
+          </a>
           <p class="card__author">Надежда</p>
           <time class="card__publication-date" datetime="2025-02-03">(45 часов назад)</time>
           <p class="card__description">Всем GM и взаимные лайки!</p>
@@ -131,42 +145,41 @@
       </ul>
     </section>
 
-    <section class="add-post">
+    <section class="add-photo">
       <h2 class="visually-hidden">Добавить пост</h2>
 
-      <div class="add-post__headline">
-        <p class="add-post__intro">
+      <div class="add-photo__headline">
+        <p class="add-photo__intro">
           Затмите их всех!
           Выкладывайте все, что накопилось в телефоне!
         </p>
       </div>
 
-      <form class="add-post__form photo-form" action="https://echo.htmlacademy.ru" enctype="multipart/form-data" method="post">
+      <form class="add-photo__form photo-form" action="https://echo.htmlacademy.ru" enctype="multipart/form-data" method="post">
         <div class="photo-form__image-column">
           <img class="photo-form__image" src="./images/post-form-mobile@1x.jpg" width="280" height="374" alt="photo">
         </div>
 
-        <div class="photo-form__controls">
-
-          <div class="photo-form__filters photo-filters tab">
+        <div class="photo-form__controls-column">
+          <div class="photo-form__filters-wrapper">
             <!-- TABS -->
-            <div class="photo-filters__buttons tab__buttons">
-              <button class="photo-filters__button filter-button filter-button--active" type="button" data-filter="crop">
+            <div class="photo-form__filter-buttons">
+              <button class="photo-form__filter-button filter-button filter-button--active" type="button" data-filter="crop">
                 <span class="visually-hidden">Обрезка</span>
               </button>
 
-              <button class="photo-filters__button filter-button" type="button" data-filter="fill">
+              <button class="photo-form__filter-button filter-button" type="button" data-filter="fill">
                 <span class="visually-hidden">Заливка</span>
               </button>
 
-              <button class="photo-filters__button filter-button" type="button" data-filter="contrast">
+              <button class="photo-form__filter-button filter-button" type="button" data-filter="contrast">
                 <span class="visually-hidden">Контрастность</span>
               </button>
             </div>
 
             <!-- TABS CONTENT -->
-            <div class="photo-filters__content tab__content">
-              <div class="photo-filters__item photo-filters__item--icon-crop photo-filters__item--active tab__item" data-filter="crop">
+            <div class="photo-form__content">
+              <div class="photo-form__filter-item photo-form__filter-item--icon-crop photo-form__filter-item--active" data-filter="crop">
                 <div class="filter-range">
                   <div class="filter-range__rail">
                     <div class="filter-range__track"></div>
@@ -178,7 +191,7 @@
                 </div>
               </div>
 
-              <div class="photo-filters__item photo-filters__item--icon-fill tab__item" data-filter="fill">
+              <div class="photo-form__filter-item photo-form__filter-item--icon-fill" data-filter="fill">
                 <div class="filter-range">
                   <div class="filter-range__rail">
                     <div class="filter-range__track"></div>
@@ -190,7 +203,7 @@
                 </div>
               </div>
 
-              <div class="photo-filters__item photo-filters__item--icon-contrast tab__item" data-filter="contrast">
+              <div class="photo-form__filter-item photo-form__filter-item--icon-contrast" data-filter="contrast">
                 <div class="filter-range">
                   <div class="filter-range__rail">
                     <div class="filter-range__track"></div>
@@ -204,12 +217,11 @@
             </div>
           </div>
 
-          <div class="photo-form__buttons">
+          <div class="photo-form__buttons-wrapper">
             <button class="photo-form__button button button--available button--rounded" type="submit">Запостить</button>
             <button class="photo-form__button button button--unavailable button--rounded" type="reset">Отмена</button>
           </div>
         </div>
-
       </form>
     </section>
   </main>

@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Форма регистрации</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="styles/styles.css">
+  <script src="scripts/index.js" defer></script>
+</head>
+
+<body class="page">
+  <header class="page__header page-header">
+    <nav class="page-header__main-nav main-nav">
+      <a class="main-nav__logo logo" href="#">
+        <img src="./images/logo-mobile.svg" width="74" height="23" alt="Логотип Pink">
+      </a>
+
+      <ul class="site-nav">
+        <li class="site-nav__item">
+          <a class="site-nav__link" href="#">главная</a>
+        </li>
+        <li class="site-nav__item">
+          <a class="site-nav__link" href="#">Фотографии</a>
+        </li>
+        <li class="site-nav__item">
+          <a class="site-nav__link" href="#">конкурс</a>
+        </li>
+        <li class="site-nav__item">
+          <a class="site-nav__link" href="#">html academy</a>
+        </li>
+      </ul>
+
+      <button class="burger-button" type="button">
+        <span class="visually-hidden">Открыть меню</span>
+      </button>
+    </nav>
+  </header>
+
+  <main class="page__main">
+    <div class="page__headline page-headline">
+      <h1 class="page-headline__title">Конкурс на самое безбашенное путешествие с Пинк</h1>
+    </div>
+
+    <section class="appointment">
+      <h2 class="visually-hidden">Регистрация в конкурсе</h2>
+
+      <div class="appointment__headline">
+        <p class="appointment__intro">
+          Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! Пожалуйста, заполните форму ниже:
+        </p>
+      </div>
+
+      <form class="appointment__form appointment-form" action="https://echo.htmlacademy.ru" method="post">
+        <div class="appointment-form__user-info">
+          <label class="appointment-form__input-field input-field">
+            <span class="input-field__label">Фамилия:</span>
+            <input class="input-field__input input" type="text" name="user-surname" placeholder="Укажите фамилию *">
+          </label>
+
+          <label class="appointment-form__input-field input-field">
+            <span class="input-field__label">Имя:</span>
+            <input class="input-field__input input" type="text" name="user-name" placeholder="Введите ваше имя *">
+          </label>
+
+          <label class="appointment-form__input-field input-field">
+            <span class="input-field__label">Отчество:</span>
+            <input class="input-field__input input" type="text" name="user-patronymic" placeholder="Ну и отчество тоже">
+          </label>
+        </div>
+
+        <fieldset class="appointment-form__fieldset">
+          <legend class="appointment-form__fieldset-caption">С каким приложением путешествовали?</legend>
+
+          <label class="appointment-form__radio-field radio-field">
+            <input class="visually-hidden" type="radio" name="user-app" value="ios" checked>
+            <span class="radio-field__label">Pink для iOS</span>
+          </label>
+
+          <label class="appointment-form__radio-field radio-field">
+            <input class="visually-hidden" type="radio" name="user-app" value="android">
+            <span class="radio-field__label">Pink на Android</span>
+          </label>
+
+          <label class="appointment-form__radio-field radio-field">
+            <input class="visually-hidden" type="radio" name="user-app" value="windows-phone">
+            <span class="radio-field__label">Windows Phone</span>
+          </label>
+        </fieldset>
+
+        <fieldset class="appointment-form__fieldset">
+          <legend class="appointment-form__fieldset-caption">контактная информация</legend>
+
+          <label class="appointment-form__input-field input-field">
+            <span class="input-field__label">Номер телефона</span>
+            <input class="input-field__input input input--contact-call" type="tel" name="user-phone" placeholder="Номер, пожалуйста">
+          </label>
+
+          <label class="appointment-form__input-field input-field">
+            <span class="input-field__label">Адрес почты</span>
+            <input class="input-field__input input input--contact-message" type="email" name="user-email" placeholder="Введите почту *">
+          </label>
+        </fieldset>
+
+        <fieldset class="appointment-form__fieldset">
+          <legend class="appointment-form__fieldset-caption">Ваши безбашенные достижения в путешествии</legend>
+
+          <label class="appointment-form__checkbox-field checkbox-field">
+            <input class="visually-hidden" type="checkbox" name="user-achievement" value="selfie-shark" checked>
+            <span class="checkbox-field__label">Сделал селфи с акулой</span>
+          </label>
+
+          <label class="appointment-form__checkbox-field checkbox-field">
+            <input class="visually-hidden" type="checkbox" name="user-achievement" value="saw-chuck-norris">
+            <span class="checkbox-field__label">Видел Чака Норриса</span>
+          </label>
+
+          <label class="appointment-form__checkbox-field checkbox-field">
+            <input class="visually-hidden" type="checkbox" name="user-achievement" value="held-tower" checked>
+            <span class="checkbox-field__label">Удержал башню</span>
+          </label>
+
+          <label class="appointment-form__checkbox-field checkbox-field">
+            <input class="visually-hidden" type="checkbox" name="user-achievement" value="sunburned-beach" checked>
+            <span class="checkbox-field__label">Обгорел на пляже</span>
+          </label>
+
+          <label class="appointment-form__checkbox-field checkbox-field">
+            <input class="visually-hidden" type="checkbox" name="user-achievement" value="bought-souvenirs">
+            <span class="checkbox-field__label">Накупил сувениров</span>
+          </label>
+
+          <label class="appointment-form__checkbox-field checkbox-field">
+            <input class="visually-hidden" type="checkbox" name="user-achievement" value="destroy-hotel">
+            <span class="checkbox-field__label">Разгромил отель</span>
+          </label>
+        </fieldset>
+
+        <fieldset class="appointment-form__fieldset">
+          <legend class="appointment-form__fieldset-caption">Опишите свои эмоции</legend>
+
+          <textarea class="appointment-form__textarea textarea" name="user-comment">Можно прям в красках, не стесняясь в выражениях</textarea>
+        </fieldset>
+
+        <div class="appointment-form__buttons-wrapper">
+          <button class="appointment-form__submit button button--primary" type="submit">Отправить форму</button>
+          <p class="appointment-form__required-fields"><sup>*</sup> — обязательные для заполнения поля</p>
+        </div>
+      </form>
+    </section>
+  </main>
+
+  <footer class="page-footer">
+    <a class="page-footer__logo logo-second" href="#">
+      <img src="./images/footer-second-mobile.svg" width="145" height="40" alt="Логотип">
+    </a>
+
+    <ul class="page-footer__social social">
+      <li class="social__item">
+        <a class="social__link" href="#">
+          <span class="visually-hidden">Твиттер</span>
+        </a>
+      </li>
+      <li class="social__item">
+        <a class="social__link" href="#">
+          <span class="visually-hidden">Фейсбук</span>
+        </a>
+      </li>
+      <li class="social__item">
+        <a class="social__link" href="#">
+          <span class="visually-hidden">Youtube</span>
+        </a>
+      </li>
+    </ul>
+
+    <div class="page-footer__copyright copyright">
+      <span class="copyright__label">Разработано</span>
+
+      <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+        <span class="visually-hidden">HTML Academy</span>
+      </a>
+    </div>
+  </footer>
+
+  <div class="modal">
+    <div class="modal__content">
+      <div class="modal__item js-form-error">
+        <h3 class="modal__title">Что-то пошло не так!</h3>
+
+        <p class="modal__text-info">
+          Проверьте поля, выделенные
+          красным, скорее всего вы забыли
+          их заполнить
+        </p>
+
+        <button class="modal__button button button--primary" type="button">ОК</button>
+      </div>
+
+      <div class="modal__item js-form-successfull">
+        <h3 class="modal__title">Ваша заявка отправлена</h3>
+
+        <p class="modal__text-info">
+          Спасибо за ваше участие, ваша
+          заявка уже поступила к нам. В
+          ближайшее время мы рассмотрим
+          ее и оповестим вас.
+        </p>
+
+        <button class="modal__button button button--primary" type="button">ЗАКРЫТЬ ОКНО</button>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
