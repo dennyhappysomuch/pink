@@ -1,0 +1,16 @@
+.logo-second {
+  &:hover,
+  &:focus {
+    .logo-second__icon-text {
+      fill: $text-color-accent-secondary;
+    }
+  }
+
+  &:active {
+    opacity: 0.3;
+
+    .logo-second__icon-text {
+      fill: $text-color-base;
+    }
+  }
+}

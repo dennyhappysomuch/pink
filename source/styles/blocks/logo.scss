@@ -1,0 +1,35 @@
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 74px;
+  height: 23px;
+
+  mask-image: url("./../../icons/logo-mobile.svg");
+  mask-repeat: no-repeat;
+  mask-position: center;
+  background-color: $bg-color-light;
+
+  &:hover,
+  &:focus {
+    background-color: $bg-color-accent-secondary;
+  }
+
+  &:active {
+    background-color: rgba($bg-color-light, 0.3);
+  }
+
+  @media (min-width: 660px) {
+    width: 145px;
+    height: 40px;
+
+    mask-image: url("./../../icons/logo-tablet.svg");
+  }
+
+  @media (min-width: 980px) {
+    width: 147px;
+
+    mask-image: url("./../../icons/logo-desktop.svg");
+  }
+}

@@ -1,0 +1,98 @@
+.product-efficiency {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-color: $bg-color-accent;
+  }
+}
+
+.product-efficiency__content-wrapper {
+  @media (min-width: $tablet-width) {
+    padding-top: 105px;
+
+    background-image: url("./../../icons/timer.svg");
+    background-size: 238px 276px;
+    background-repeat: no-repeat;
+    background-position: left bottom;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 115px;
+    padding-bottom: 120px;
+    background-size: 298px 345px;
+    background-position: left top 17px;
+  }
+}
+
+.product-efficiency__content {
+  @media (min-width: $tablet-width) {
+    width: 310px;
+    margin-left: auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 535px;
+    margin-right: 35px;
+  }
+}
+
+.product-efficiency__title {
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    width: 170px;
+
+    margin-bottom: 24px;
+
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 120%;
+    color: $text-color-secondary;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: auto;
+    margin-bottom: 35px;
+
+    line-height: 100%;
+  }
+}
+
+.product-efficiency__description {
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    margin-bottom: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 45px;
+
+    font-size: 18px;
+    line-height: 167%;
+  }
+}
+
+.product-efficiency__link {
+  color: $text-color-accent-secondary;
+  text-decoration: underline;
+
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.8;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 18px;
+    line-height: 167%;
+  }
+}

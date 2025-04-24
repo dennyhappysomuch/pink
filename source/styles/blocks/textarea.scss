@@ -1,0 +1,19 @@
+.textarea {
+  box-sizing: border-box;
+
+  padding: 22px 20px;
+  margin: 0;
+
+  font-size: 18px;
+  line-height: 167%;
+
+  border: 2px solid #e5e5e5;
+  border-radius: 1px;
+  letter-spacing: 90%;
+  resize: none;
+
+  &::placeholder {
+    font-size: inherit;
+    line-height: inherit;
+  }
+}

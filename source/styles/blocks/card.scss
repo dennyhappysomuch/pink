@@ -1,0 +1,172 @@
+.card {
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-rows: min-content 1fr;
+  }
+}
+
+.card--top-of-day {
+  position: relative;
+
+  &::before {
+    content: attr(data-panorama-text);
+
+    position: absolute;
+    top: 0;
+    right: 20px;
+
+    padding: 8px 19px;
+
+    color: $text-color-accent;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 200%;
+    text-align: center;
+    text-transform: uppercase;
+
+    background-color: $bg-color-accent-secondary;
+  }
+
+  @media (min-width: $tablet-width) {
+    &::before {
+      top: 57px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &::before {
+      top: 54px;
+      right: 130px;
+    }
+  }
+}
+
+.card__image {
+  display: block;
+  margin: 0;
+}
+
+.card--top-of-day .card__image {
+  height: 137px;
+
+  @media (min-width: $tablet-width) {
+    height: 509px;
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 506px;
+  }
+}
+
+.card__content {
+  display: grid;
+  grid-template: "title       pub-date" min-content "description description" min-content "likes       likes" 1fr / min-content 1fr;
+  row-gap: 14px;
+
+  padding: 25px 17px;
+
+  background-color: $bg-color-accent;
+
+  @media (min-width: $tablet-width) {
+    padding: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 27px;
+  }
+}
+
+.card--top-of-day .card__content {
+  box-sizing: border-box;
+
+  width: 280px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media (min-width: $tablet-width) {
+    width: 620px;
+
+    grid-template-areas:
+      "title       pub-date    likes"
+      "description description description";
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 940px;
+  }
+}
+
+.card__author {
+  grid-area: title;
+
+  margin: 0;
+  margin-right: 3px;
+
+  font-weight: 700;
+}
+
+.card__publication-date {
+  grid-area: pub-date;
+
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 200%;
+  text-transform: uppercase;
+}
+
+.card__description {
+  grid-area: description;
+
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.card__likes {
+  align-self: end;
+
+  grid-area: likes;
+
+  display: flex;
+  align-items: center;
+
+  margin: 0;
+
+  color: $text-color-accent-secondary;
+  font-size: 12px;
+  line-height: 200%;
+  text-transform: uppercase;
+
+  &::before {
+    content: "";
+
+    width: 13px;
+    height: 12px;
+    margin-right: 18px;
+
+    background-image: url("./../../icons/icon-heart.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  @media (min-width: $tablet-width) {
+    &::before {
+      order: 5;
+      margin-right: 0;
+      margin-left: auto;
+    }
+  }
+}
+
+.card--top-of-day .card__likes {
+  @media (min-width: $tablet-width) {
+    &::before {
+      margin-left: 18px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &::before {
+      margin-left: 16px;
+    }
+  }
+}

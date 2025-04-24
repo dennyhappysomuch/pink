@@ -1,0 +1,301 @@
+.appointment-form {
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-areas:
+      "info"
+      "apps"
+      "contacts"
+      "achievements"
+      "text"
+      "buttons";
+    row-gap: 65px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-areas:
+      "info         apps"
+      "contacts     contacts"
+      "achievements achievements"
+      "text         text"
+      "buttons      buttons";
+    grid-template-columns: 1fr 1fr;
+    gap: 64px 74px;
+    align-items: start;
+  }
+}
+
+.appointment-form__fieldset {
+  margin: 0;
+  padding: 0;
+
+
+  border: none;
+
+  @media (min-width: $tablet-width) {
+    border: 2px solid $bg-color-grey-dark;
+    border-radius: 1px;
+  }
+}
+
+/* layout */
+
+.appointment-form__info {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+
+  margin-bottom: 44px;
+
+  @media (min-width: $tablet-width) {
+    grid-area: info;
+
+    gap: 56px;
+
+    margin-bottom: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 8px;
+  }
+}
+
+.appointment-form__achievements {
+  padding-top: 42px;
+  padding-bottom: 44px;
+  margin-bottom: 42px;
+
+  @media (min-width: $tablet-width) {
+    grid-area: achievements;
+
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-bottom: 0;
+  }
+}
+
+.appointment-form__contacts {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+
+  margin-bottom: 44px;
+
+  @media (min-width: $tablet-width) {
+    grid-area: contacts;
+
+    gap: 35px;
+
+    margin-bottom: 0;
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-bottom: 39px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 74px;
+
+    padding-bottom: 20px;
+  }
+}
+
+.appointment-form__apps {
+  padding-top: 42px;
+  padding-bottom: 44px;
+  margin-bottom: 42px;
+
+  @media (min-width: $tablet-width) {
+    grid-area: apps;
+
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-bottom: 0;
+  }
+}
+
+.appointment-form__text {
+  margin-bottom: 50px;
+
+  @media (min-width: $tablet-width) {
+    grid-area: text;
+
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-bottom: 53px;
+    margin-bottom: 70px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 45px;
+  }
+}
+
+.appointment-form__item--theme-accent {
+  background-color: $bg-color-grey-light;
+
+  @media (min-width: $tablet-width) {
+    background-color: transparent;
+  }
+}
+
+.appointment-form__achievements-fieldset {
+  @media (min-width: $tablet-width) {
+    padding-bottom: 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 57px;
+  }
+}
+
+.appointment-form__apps-fieldset {
+  @media (min-width: $tablet-width) {
+    padding-bottom: 54px;
+  }
+}
+
+.appointment-form__fieldset-caption {
+  padding: 0;
+
+  color: $text-color-accent-secondary;
+  line-height: 129%;
+  text-transform: uppercase;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    background-color: $bg-color-light;
+  }
+}
+
+.appointment-form__achievements-caption {
+  width: 218px;
+  margin-bottom: 44px;
+
+  @media (min-width: $tablet-width) {
+    width: auto;
+
+    padding-left: 30px;
+    padding-right: 30px;
+
+    margin-bottom: 49px;
+    background-color: $bg-color-light;
+  }
+}
+
+.appointment-form__apps-caption {
+  margin-bottom: 40px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 25px;
+    padding-right: 25px;
+    margin-bottom: 49px;
+  }
+}
+
+.appointment-form__contacts-caption {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+
+    margin-bottom: 41px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 39px;
+  }
+}
+
+.appointment-form__text-caption {
+  margin-bottom: 22px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 42px;
+    padding-left: 38px;
+    padding-right: 38px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 39px;
+  }
+}
+
+.appointment-form__checkbox-list {
+  display: grid;
+  row-gap: 47px;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 60px;
+    margin-right: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: repeat(3, max-content);
+    justify-content: space-between;
+    column-gap: 40px;
+  }
+}
+
+.appointment-form__radio-list {
+  display: flex;
+  flex-direction: column;
+  gap: 38px;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 60px;
+    margin-right: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 74px;
+  }
+}
+
+.appointment-form__textarea {
+  height: 197px;
+  width: 100%;
+}
+
+.appointment-form__buttons-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 45px;
+
+  @media (min-width: $tablet-width) {
+    grid-area: buttons;
+
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.appointment-form__submit {
+  width: 100%;
+
+  @media (min-width: $tablet-width) {
+    width: 296px;
+  }
+}
+
+.appointment-form__required-fields {
+  margin: 0;
+
+  line-height: 214%;
+  text-transform: uppercase;
+
+  span {
+    display: none;
+
+    @media (min-width: $desktop-width) {
+      display: inline-block;
+    }
+  }
+
+  sup {
+    color: $text-color-accent-secondary;
+  }
+}

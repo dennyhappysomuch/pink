@@ -1,0 +1,32 @@
+.tariff {
+  padding-top: 129px;
+  padding-bottom: 45px;
+
+  background-image: url("./../../icons/bg-grey.svg");
+  background-repeat: no-repeat;
+  background-size: 1214px 506px;
+  background-position: center 0;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 114px;
+    padding-bottom: 70px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 159px;
+    padding-bottom: 98px;
+  }
+}
+
+.tariff__content-wrapper {
+  overflow: hidden;
+}
+
+.tariff__table {
+  position: relative;
+  width: 100%;
+
+  @media (min-width: $tablet-width) {
+    position: static;
+  }
+}

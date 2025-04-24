@@ -1,0 +1,114 @@
+.button {
+  display: block;
+
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.button--primary {
+  padding: 15px;
+
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 167%;
+  text-transform: uppercase;
+  color: $text-color-accent;
+
+  background-color: $bg-color-green;
+
+  &:hover,
+  &:focus {
+    background-color: $bg-color-green-darker;
+  }
+
+  &:active {
+    color: rgba($text-color-accent, 0.3);
+
+    background-color: $bg-color-green-darker;
+  }
+
+  &:disabled {
+    background-color: $bg-color-grey-dark;
+    cursor: default;
+  }
+}
+
+.button--accent {
+  padding: 18px 15px;
+
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 100%;
+  text-align: center;
+  color: $text-color-accent;
+
+  border: 3px solid $bg-color-light;
+  border-radius: 29px;
+
+  &:hover,
+  &:focus {
+    color: $text-color-accent-secondary;
+
+    background-color: $bg-color-light;
+  }
+
+  &:active {
+    color: rgba($text-color-accent-secondary, 0.3);
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 21px;
+    line-height: 86%;
+  }
+}
+
+.button--available {
+  padding: 10px 15px;
+
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 100%;
+  text-align: center;
+  color: $text-color-accent-secondary;
+
+  border: 3px solid $bg-color-accent-secondary;
+  border-radius: 30px;
+
+  &:hover,
+  &:focus {
+    color: $text-color-accent;
+
+    background-color: $bg-color-accent-secondary;
+  }
+
+  &:active {
+    color: rgba($text-color-accent, 0.3);
+  }
+}
+
+.button--unavailable {
+  padding: 10px 15px;
+
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 100%;
+  text-align: center;
+  color: rgba($text-color-base, 0.1);
+
+  border: 3px solid rgba($bg-color-secondary, 0.1);
+  border-radius: 30px;
+
+  &:hover,
+  &:focus {
+    color: rgba($text-color-base, 0.3);
+
+    border-color: rgba($bg-color-secondary, 0.3);
+  }
+
+  &:active {
+    color: rgba($text-color-accent, 0.3);
+
+    background-color: rgba($bg-color-secondary, 0.3);
+  }
+}

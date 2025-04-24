@@ -1,0 +1,13 @@
+.slider__list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.slider__item {
+  display: none;
+}
+
+.slider__item--active {
+  display: grid;
+}

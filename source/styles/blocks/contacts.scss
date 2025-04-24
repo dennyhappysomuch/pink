@@ -1,0 +1,166 @@
+
+.contacts__content-wrapper {
+  padding-top: 50px;
+  padding-bottom: 22px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 30px;
+  }
+}
+
+.contacts__title {
+  margin: 0;
+  margin-bottom: 45px;
+
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 120%;
+  text-align: center;
+  color: #283645;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 50px;
+
+    font-size: 40px;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 60px;
+
+    font-size: 50px;
+  }
+}
+
+.contacts__list {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 47px;
+    margin-right: 29px;
+
+    gap: 50px;
+    flex-flow: row wrap;
+    justify-content: space-between;
+  }
+}
+
+.contacts__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 13px;
+
+  @media (min-width: $tablet-width) {
+    gap: 15px;
+
+    &:nth-child(3) {
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    gap: 35px;
+
+    &:nth-child(3) {
+      width: 240px;
+      margin-left: 0;
+      margin-right: 0;
+    }
+  }
+}
+
+.contacts__item-title {
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.contacts__item-link {
+  font-weight: 300;
+  font-size: 24px;
+  text-align: center;
+  color: $text-color-accent-secondary;
+
+  text-decoration: none;
+  cursor: pointer;
+
+  &:hover,
+  &:focus-visible {
+    color: $text-color-base;
+    text-decoration: underline;
+  }
+
+  &:active {
+    color: rgba($text-color-base, 0.3);
+  }
+}
+
+.contacts__map {
+  min-width: 320px;
+  height: 200px;
+  margin-left: auto;
+  margin-right: auto;
+
+  background-image:
+    url("./../../icons/triangle-mask.svg"),
+    image-set(
+      url("./../../images/map-mobile@2x.webp") type("image/webp") 2x,
+      url("./../../images/map-mobile@1x.webp") type("image/webp") 1x,
+      url("./../../images/map-mobile@2x.png") type("image/png") 2x,
+      url("./../../images/map-mobile@1x.png") type("image/png") 1x,
+    );
+  background-repeat: no-repeat;
+  background-position:
+    center -90px,
+    center;
+  background-size:
+    1200px 123px,
+    320px 200px;
+
+  @media (min-width: $tablet-width) {
+    min-width: $tablet-width;
+    height: 374px;
+
+    background-image:
+      url("./../../icons/triangle-mask.svg"),
+      image-set(
+        url("./../../images/map-tablet@2x.webp") type("image/webp") 2x,
+        url("./../../images/map-tablet@1x.webp") type("image/webp") 1x,
+        url("./../../images/map-tablet@2x.png") type("image/png") 2x,
+        url("./../../images/map-tablet@1x.png") type("image/png") 1x,
+      );
+    background-position:
+      center -54px,
+      center;
+    background-size:
+      1200px 123px,
+      660px 374px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: $desktop-width;
+    height: 502px;
+
+    background-image:
+      url("./../../icons/triangle-mask.svg"),
+      image-set(
+        url("./../../images/map-desktop@2x.webp") type("image/webp") 2x,
+        url("./../../images/map-desktop@1x.webp") type("image/webp") 1x,
+        url("./../../images/map-desktop@2x.png") type("image/png") 2x,
+        url("./../../images/map-desktop@1x.png") type("image/png") 1x,
+      );
+    background-position:
+      center 0,
+      center;
+    background-size:
+      1439px 123px,
+      1200px 502px;
+  }
+}

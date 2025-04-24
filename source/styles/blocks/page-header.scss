@@ -1,0 +1,14 @@
+.page-header {
+  background-color: rgba($bg-color-base-dark, 0.3);
+
+  @media (max-width: $tablet-width-only) {
+    &:has(.main-nav--no-js, .main-nav--opened) {
+      background-color: $bg-color-secondary;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 27px;
+    padding-bottom: 43px;
+  }
+}
