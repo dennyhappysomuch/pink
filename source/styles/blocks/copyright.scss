@@ -1,0 +1,37 @@
+.copyright {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+
+  color: inherit;
+  font-size: 18px;
+  line-height: 100%;
+
+  cursor: pointer;
+  text-decoration: none;
+
+  &::after {
+    content: "";
+
+    width: 27px;
+    height: 34px;
+
+    background-color: $bg-color-accent-secondary;
+    mask-image: url("./../../icons/icon-copyright.svg");
+    mask-position: center;
+    mask-repeat: no-repeat;
+  }
+
+  &:hover,
+  &:focus {
+    &::after {
+      background-color: $bg-color-secondary;
+    }
+  }
+
+  &:active {
+    &::after {
+      background-color: rgba($bg-color-secondary, 0.3);
+    }
+  }
+}

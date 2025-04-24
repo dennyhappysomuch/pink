@@ -1,1 +1,25 @@
 /* здесь используйте глобальные переменные */
+$primary-font: "Open Sans", sans-serif;
+
+$text-color-base: #283645;
+$text-color-secondary: #000000;
+$text-color-accent: #ffffff;
+$text-color-accent-secondary:  #d22856;
+
+$bg-color-light: #ffffff;
+$bg-color-base: #1d2631;
+$bg-color-base-dark: #000000;
+$bg-color-secondary: #283645;
+$bg-color-accent: #f2f2f2; // Проверить и заменить на  grey-light
+$bg-color-accent-secondary: #d22856;
+$bg-color-grey-light: #f2f2f2;
+$bg-color-grey-dark: #e5e5e5;
+
+$bg-color-green: #2aab6d;
+$bg-color-green-darker: #1c9b5e;
+
+// Viewports
+$tablet-width: 660px;
+$desktop-width: 980px;
+$mobile-width-only: 659px;
+$tablet-width-only: 979px;

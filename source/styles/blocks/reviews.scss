@@ -1,0 +1,151 @@
+.reviews {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  padding-top: 50px;
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 688px 1fr;
+    grid-template-areas: "prev-button slider next-button";
+
+    padding-top: 82px;
+  }
+}
+
+.reviews__list {
+  margin: 0;
+  margin-bottom: 40px;
+  padding: 0;
+
+  list-style: none;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 45px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-area: slider;
+
+    margin-bottom: 0;
+  }
+}
+
+.reviews__item {
+  display: grid;
+
+  @media (min-width: $tablet-width) {
+    grid-template-areas:
+      "text"
+      "author-name"
+      "author-info";
+    justify-items: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-areas:
+      "quote"
+      "text"
+      "author-name"
+      "author-info";
+
+    &::before {
+      grid-area: quote;
+
+      content: "";
+
+      width: 79px;
+      height: 63px;
+      margin-bottom: 50px;
+
+      background-image: url("./../../icons/quotes.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+  }
+}
+
+.reviews__author-name {
+  margin: 0;
+  margin-bottom: 30px;
+
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 167%;
+  text-align: center;
+  color: $text-color-secondary;
+
+  @media (min-width: $tablet-width) {
+    grid-area: author-name;
+
+    margin-bottom: 8px;
+
+    font-size: 20px;
+    line-height: 150%;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 24px;
+    line-height: 125%;
+  }
+}
+
+.reviews__author-info {
+  display: none;
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    grid-area: author-info;
+
+    display: block;
+
+    line-height: 214%;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 18px;
+    line-height: 167%;
+  }
+}
+
+.reviews__description {
+  margin: 0;
+
+  line-height: 214%;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    grid-area: text;
+
+    margin-bottom: 50px;
+
+    font-size: 18px;
+    line-height: 167%;
+  }
+}
+
+.reviews__button {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: block;
+  }
+}
+
+.reviews__button-prev {
+  grid-area: prev-button;
+
+  transform: rotate(180deg);
+}
+
+.reviews__button-next {
+  grid-area: next-button;
+  justify-self: end;
+}
+
+.reviews__toggles {
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+}

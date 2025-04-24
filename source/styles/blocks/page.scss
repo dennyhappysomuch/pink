@@ -1,0 +1,32 @@
+.page {
+  min-width: 320px;
+
+  padding: 0;
+  margin: 0;
+
+  font-family: $primary-font;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 171%;
+  color: $text-color-base;
+}
+
+.page__header {
+  position: relative;
+}
+
+.page__hero-section {
+  margin-top: -66px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: -110px;
+  }
+}
+
+.page__headline {
+  margin-top: -66px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: -110px;
+  }
+}

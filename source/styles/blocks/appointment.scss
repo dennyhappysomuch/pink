@@ -1,0 +1,40 @@
+
+.appointment {
+  padding-bottom: 25px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 0;
+  }
+}
+
+.appointment__headline {
+  padding-top: 54px;
+  padding-bottom: 54px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 100px;
+    padding-bottom: 80px;
+  }
+}
+
+.appointment__intro {
+  margin: 0 auto;
+
+  line-height: 214%;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    width: 490px;
+
+    font-size: 18px;
+    line-height: 167%;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 760px;
+  }
+}

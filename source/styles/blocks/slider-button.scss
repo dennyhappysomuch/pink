@@ -1,0 +1,27 @@
+.slider-button {
+  display: inline-flex;
+  width: 22px;
+  height: 41px;
+  padding: 0;
+
+  mask-image: url("./../../icons/icon-arrow.svg");
+  mask-position: center;
+  mask-repeat: no-repeat;
+  background-color: rgba($bg-color-secondary, 0.3);
+  border: none;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    background-color: rgba($bg-color-secondary, 0.6);
+  }
+
+  &:active {
+    background-color: rgba($bg-color-secondary, 0.1);
+  }
+
+  &:disabled {
+    background-color: rgba($bg-color-secondary, 0.1);
+    cursor: default;
+  }
+}

@@ -1,0 +1,82 @@
+.filter-button {
+  display: flex;
+
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+
+  &::before {
+    background-color: rgba($bg-color-secondary, 0.3);
+  }
+
+  &:hover,
+  &:focus {
+    &::before {
+      background-color: rgba($bg-color-secondary, 0.5);
+    }
+  }
+
+  &:active {
+    &::before {
+      background-color: $bg-color-accent-secondary;
+    }
+  }
+
+  &:disabled {
+    cursor: default;
+  }
+}
+
+.filter-button--active {
+  &::before {
+    background-color: $bg-color-accent-secondary;
+  }
+
+  cursor: default;
+
+  &:hover,
+  &:focus,
+  &:active {
+    &::before {
+      background-color: $bg-color-accent-secondary;
+    }
+  }
+}
+
+.filter-button--theme--crop,
+.filter-button--theme--fill,
+.filter-button--theme--contrast {
+  mask-repeat: no-repeat;
+  mask-position: center;
+
+  &::before {
+    content: "";
+  }
+}
+
+.filter-button--theme--crop {
+  &::before {
+    width: 44px;
+    height: 44px;
+
+    mask-image: url("./../../icons/icon-crop.svg");
+  }
+}
+
+.filter-button--theme--fill {
+  &::before {
+    width: 48px;
+    height: 43px;
+
+    mask-image: url("./../../icons/icon-fill.svg");
+  }
+}
+
+.filter-button--theme--contrast {
+  &::before {
+    width: 32px;
+    height: 32px;
+
+    mask-image: url("./../../icons/icon-contrast.svg");
+  }
+}

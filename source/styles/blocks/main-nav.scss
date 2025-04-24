@@ -1,0 +1,77 @@
+.main-nav {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $desktop-width) {
+    align-items: start;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 172px;
+  }
+}
+
+/* TOP ROW */
+.main-nav__top-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+
+  padding-top: 21px;
+  padding-bottom: 21px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 27px;
+    padding-bottom: 43px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+}
+
+/* TOGGLE */
+.main-nav__toggle {
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+}
+
+.main-nav--no-js .main-nav__toggle {
+  @media (max-width: $tablet-width-only) {
+    display: none;
+  }
+}
+
+/* SITE NAV */
+.main-nav__site-nav {
+  @media (max-width: $tablet-width-only) {
+    display: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 18px;
+  }
+}
+
+.main-nav--opened .main-nav__site-nav {
+  @media (max-width: $tablet-width-only) {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 66px;
+    width: 100%;
+    display: block;
+  }
+
+  @media (min-width: $tablet-width) and (max-width: $tablet-width-only) {
+    top: 110px;
+  }
+}
+
+.main-nav--no-js .main-nav__site-nav {
+  @media (max-width: $tablet-width-only) {
+    display: block;
+  }
+}

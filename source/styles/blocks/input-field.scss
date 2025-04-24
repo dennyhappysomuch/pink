@@ -1,0 +1,110 @@
+.input-field {
+  display: grid;
+  grid-template-areas:
+    "label"
+    "input";
+  row-gap: 10px;
+
+  @media (min-width: $tablet-width) {
+    grid-template-areas: "label input";
+    grid-template-columns: auto 1fr;
+    align-items: center;
+  }
+}
+
+.input-field--with-icon {
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-areas:
+      "input icon"
+      "label .";
+    grid-template-columns: 1fr 59px;
+    row-gap: 20px;
+  }
+}
+
+.input-field--icon-phone {
+  @media (min-width: $tablet-width) {
+    &::after {
+      grid-area: icon;
+
+      content: "";
+
+      width: 59px;
+      height: 100%;
+
+      background-image: url("./../../icons/icon-phone.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 20px 19px;
+      background-color: $bg-color-grey-dark;
+    }
+  }
+}
+
+.input-field--icon-email {
+  @media (min-width: $tablet-width) {
+    &::after {
+      grid-area: icon;
+
+      content: "";
+
+      width: 59px;
+      height: 100%;
+
+      background-image: url("./../../icons/icon-email.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 18px 13px;
+      background-color: $bg-color-grey-dark;
+    }
+  }
+}
+
+.input-field--with-icon .input-field__label {
+  @media (min-width: $tablet-width) {
+    grid-area: label;
+
+    margin-left: 17px;
+  }
+}
+
+.input-field--with-icon .input-field__input {
+  @media (min-width: $tablet-width) {
+    grid-area: input;
+  }
+}
+
+.input-field__label {
+  grid-area: label;
+
+  margin-left: 23px;
+
+  line-height: 214%;
+  text-transform: uppercase;
+  color: $text-color-accent-secondary;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 0;
+    margin-right: 20px;
+  }
+}
+
+.input-field__input {
+  grid-area: input;
+
+  box-sizing: border-box;
+
+  padding: 15px 20px;
+
+  color: $text-color-base;
+  font-size: 18px;
+  line-height: 167%;
+
+  border: 2px solid $bg-color-grey-dark;
+  border-radius: 1px;
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
+  }
+}
